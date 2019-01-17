@@ -45,6 +45,11 @@
   :group 'docker-compose
   :type '(repeat (string :tag "Argument")))
 
+(defcustom docker-compose-down-arguments '()
+  "Default arguments for `docker-compose-down-popup'."
+  :group 'docker-compose
+  :type '(repeat (string :tag "Argument")))
+
 (defcustom docker-compose-run-buffer-name-function 'docker-compose-make-buffer-name
   "Names a docker-compose run buffer based on `action' and `args'"
   :group 'docker-compose
