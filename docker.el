@@ -34,6 +34,7 @@
 (require 'docker-image)
 (require 'docker-machine)
 (require 'docker-network)
+(require 'docker-stats)
 (require 'docker-volume)
 
 (defun docker-read-log-level (prompt &rest _args)
@@ -60,6 +61,7 @@
    ("c" "Containers" docker-containers)
    ("i" "Images"     docker-images)
    ("n" "Networks"   docker-networks)
+   ("s" "Stats"      docker-stats)
    ("v" "Volumes"    docker-volumes)]
   ["Other"
    ("C" "Compose"    docker-compose)
